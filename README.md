@@ -10,15 +10,15 @@
     - Click on the green code button on your repository page. 
     - Select HTTPS or SSH, and copy the link displayed to you. 
     - Then, run `git clone your@link` in your terminal window!
-3. All of this being done, run `cd csxl-fullstack/backend`
-4. When you are in the backend directory, you are ready to install some essentials things! 
+3. All of this being done, run `cd csxl-fullstack/back-end`
+4. When you are in the back-end directory, you are ready to install some essentials things! 
 
 #### Housekeeping
 
 N.B. If you have Python 3 installed you might have to use python3 as opposed to python.
 
 5. Please follow the instructions in [this link](https://21s.comp110.com/resources/setup/software.html) to install python and the necessary tools for this workshop. You can safely ignore the Zoom instructions.
-6. In the `csxl-fullstack/backend` directory, run `python -m pip install -r requirements.txt`.
+6. In the `csxl-fullstack/back-end` directory, run `python -m pip install -r requirements.txt`.
 7. Then, run `python -m uvicorn main:app --reload`. 
 
 #### Sanity check!
