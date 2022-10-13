@@ -62,3 +62,32 @@ Alternatively, you can email Felipe at yanaga@ad.unc.edu (back-end) and/or Clair
 If you have read this far, please email both of us with your name, year, pronouns, and any web dev experience (none is expected! we just want to gague where y'all's understanding is). Optionally, you can also send us a joke.
 
 See you soon!
+
+## Addendum 
+
+Please write this code in your `back-end/main.py` file. Just under the `app = FastAPI()` line. 
+
+```
+origins = [
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+```
+
+You can also add these lines to the top of your main.py file. For some lines, you might just have to add a couple of imports. 
+
+```
+from typing import List
+from fastapi import FastAPI, Depends
+from fastapi.middleware.cors import CORSMiddleware
+from database.settings import Base, engine, get_db
+from models import LinkCreate
+from database.crud import get_all_links, create_db_link, delete_db_link
+```
