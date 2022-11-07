@@ -24,6 +24,7 @@ N.B. If you have Python 3 installed you might have to use python3 as opposed to 
 #### Sanity check!
 
 8. If everything is working properly, if you go to [this url](http://localhost:8000/api/health), you should see a "Hello World" message!
+9. Please take a screenshot of this screen and submit it along with your workshop registration form! 
 
 ## Front-end
 
@@ -44,8 +45,10 @@ N.B. If you have Python 3 installed you might have to use python3 as opposed to 
 
 #### Sanity check!
 5. Now, to make sure everything installed smoothly, let's test the two development environments we'll be using.
-    1. We will be using [Storybook](https://storybook.js.org/docs/react/get-started/introduction) to develop and test components. In the terminal, run `npm run storybook` to run the application. Go to the URL the command outputs (likely localhost6006), and make sure you see a Storybook page that begins with 'Hey, welcome to Storybook!' If you see this, you're golden.
-    2. To start the development server for our web app, run `npm start`. This should start a local dev server (probably localhost3000) – go to this page, and you should see a pink/purple webpage that begins with 'Hello, dev!'
+    1. We will be using [Storybook](https://storybook.js.org/docs/react/get-started/introduction) to develop and test components. In the terminal, run `npm run storybook` to run the application. Go to the URL the command outputs (likely localhost:6006), and make sure you see a Storybook page that begins with 'Hey, welcome to Storybook!' If you see this, you're golden.
+    2. Please take a screenshot of this screen and submit it along with your workshop registration form! 
+    3. To start the development server for our web app, run `npm start`. This should start a local dev server (probably localhost3000) – go to this page, and you should see a pink/purple webpage that begins with 'Hello, dev!'
+    4. Please take a screenshot of this screen and submit it along with your workshop registration form!
 6. If you were able to see these two environments, you're all set! If not, consider this a time to explore StackOverflow and/or come to the XL for help! (see the next section for more info)
 
 #### You're done!
