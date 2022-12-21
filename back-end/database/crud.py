@@ -6,6 +6,12 @@ from models import LinkCreate
 def get_all_links(db : Session):
     return db.query(Link).all()
 
+def get_link(id: int, db: Session):
+    db_link = db.query(Link).filter(Link.id == id).first()
+    if len(db_link) == 0:
+        raise HTTPException(status_code=400, detail="Link with that id does not exist!")
+    return db_link
+
 def create_db_link(link: LinkCreate, db : Session)-> Link:
     db_link = db.query(Link).filter(Link.display_name == link.display_name).first()
     if db_link: 
